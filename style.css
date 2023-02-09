@@ -104,7 +104,7 @@ p {
 /*サイドバー*/
 .menu-enter-active,
 .menu-leave-active {
-  transition: opacity 0.7s;
+  transition: opacity 0.9s;
 }
 .menu-enter,
 .menu-leave-to {
