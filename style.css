@@ -142,7 +142,7 @@ p {
 }
 @media (max-width: 600px) {
   header {
-    font-size: 18px;
+    font-size: 16px;
     height: 145px;
 
   }
