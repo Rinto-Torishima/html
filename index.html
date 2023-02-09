@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamberger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rinto Torishima's portforio</h1>
+    </header>
+    <div class="wrapper">
+      <main>
+        <section class="profile">
+          <h2 id="intro">自己紹介</h2>
+          <p>
+            札幌情報未来専門学校 <br />
+            インフォメーションテクノロジー学科 <br />
+            1年生 鳥島 凜人です。
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <h2 id="prod">制作物</h2>
+          <div class="box">
+            <div>
+              <a
+                href="https://github.com/Rinto-Torishima/snsapp"
+                target="_blank"
+              >
+                <img
+                  src="images/neko.jpg"
+                  width="250"
+                  height="250"
+                  class="fit"
+                  alt=""
+                />
+              </a>
+              <div class="cmt">
+                <p>非同期いいね機能付き掲示板</p>
+                <p>Githubソースコード</p>
+              </div>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br />
+          <h2 id="contact">連絡先</h2>
+        </section>
+      </main>
+    </div>
+    <div id="app">
+      <!--ハンバーガーメニューのボタン-->
+      <div class="hamburger_btn" v-on:click="ActiveBtn=!ActiveBtn">
+        <span
+          class="line line_01"
+          v-bind:class="{'btn_line01':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_02"
+          v-bind:class="{'btn_line02':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_03"
+          v-bind:class="{'btn_line03':ActiveBtn}"
+        ></span>
+      </div>
+      <!--サイドバー-->
+      <transition name="menu">
+        <div class="menu" v-show="ActiveBtn">
+          <ul>
+            <li><a href="#intro">プロフィール</a></li>
+            <li><a href="#prod">制作物</a></li>
+            <li><a href="#contact">連絡先</a></li>
+            <li><a href="#">項目4</a></li>
+            <li><a href="#">項目5</a></li>
+          </ul>
+        </div>
+      </transition>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
