@@ -130,7 +130,7 @@ p {
   padding: 1rem;
 }
 .menu {
-  background-color: rgba(197, 197, 197, 0.98);
+  background-color: rgba(197, 197, 197, 1);
   z-index: 30;
   padding: 2rem 1rem;
   position: fixed;
