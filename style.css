@@ -54,6 +54,15 @@ p {
 .box img {
   vertical-align: bottom;
 }
+.hover {
+  transition: 0.5s;
+  /* マウスカーソルを外すとき */
+}
+.hover:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  /* マウスカーソルを載せるとき */
+}
 /*ハンバーガーボタン*/
 .hamburger_btn {
   position: fixed; /*常に最上部に表示したいので固定*/
@@ -121,7 +130,7 @@ p {
   padding: 1rem;
 }
 .menu {
-  background-color: rgba(197, 197, 197, 0.671);
+  background-color: rgba(197, 197, 197, 0.9);
   z-index: 30;
   padding: 2rem 1rem;
   position: fixed;
@@ -144,6 +153,5 @@ p {
   header {
     font-size: 14px;
     height: 145px;
-
   }
 }
