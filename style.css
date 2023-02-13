@@ -42,14 +42,18 @@ p {
   object-fit: cover;
   border: solid 1px #ccc;
 }
-.cmt {
+figcaption {
   background-color: #ddd;
   padding: 8px;
+  width: 250px;
 }
 .box {
   display: flex;
   display: wrap;
   justify-content: center;
+}
+.ba {
+  margin-left: 5px;
 }
 .box img {
   vertical-align: bottom;
@@ -153,5 +157,19 @@ p {
   header {
     font-size: 14px;
     height: 145px;
+  }
+  .box {
+    display: block;
+  }
+  figcaption {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cmt {
+    background-color: #ddd;
+  }
+  .ba {
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
