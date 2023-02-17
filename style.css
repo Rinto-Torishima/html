@@ -13,7 +13,7 @@ header {
 }
 /* ヘッダーの文字の大きさ */
 #title {
-  font-size: 30px;
+  font-size: 40px;
   animation: fadeIn 2s ease 0s 1 normal;
 }
 @keyframes fadeIn {
@@ -198,7 +198,7 @@ footer {
   }
   /* ヘッダーの文字の大きさ */
   #title {
-    font-size: 25px;
+    font-size: 30px;
   }
   .cmt {
     background-color: #ddd;
