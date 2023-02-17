@@ -6,10 +6,8 @@ body {
 header {
   background-color: rgb(210, 234, 174);
   height: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+  place-items: center;
   background-image: url(images/header.jpg);
   background-repeat: repeat;
 }
