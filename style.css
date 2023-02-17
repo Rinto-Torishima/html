@@ -4,7 +4,6 @@ body {
 }
 /* ヘッダー */
 header {
-  background-color: rgb(210, 234, 174);
   height: 230px;
   display: grid;
   place-items: center;
