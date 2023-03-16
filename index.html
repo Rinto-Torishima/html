@@ -6,19 +6,6 @@
     <title>ポートフォリオ</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,121 +15,116 @@
   </head>
 
   <body>
-    <div id="app">
-      <v-app>
-        <header>
-          <h2 id="title">Rinto Torishima's portforio</h2>
-        </header>
-
-        <div class="wrapper">
-          <main>
-            <section class="profile">
-              <div id="intro">
-                <h2>自己紹介</h2>
-                <p>
-                  札幌情報未来専門学校 <br />
-                  インフォメーションテクノロジー学科 1年生 鳥島 凜人です。<br />
-                  趣味はゲームと野球観戦で、好きなプログラミング言語はphpとjavascript。<br />
-                  web系のエンジニアを目指してプログラミング勉強中。
-                </p>
-              </div>
-              <div id="create">
-                <h2>制作物</h2>
-                <p>
-                  LaravelとjQueryを使って非同期いいね機能付きの掲示板を制作しました
-                </p>
-                <div id="box">
-                  <div class="item">
-                    <a href="https://v-bboard.com" target="_blank" class="hover"
-                      ><figure>
-                        <img
-                          src="images/scShot.png"
-                          width="250"
-                          height="250"
-                          class="fit"
-                          alt=""
-                        />
-                        <figcaption>Laravel掲示板</figcaption>
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a
-                      href="https://github.com/Rinto-Torishima/snsapp"
-                      target="_blank"
-                      class="hover"
-                    >
-                      <figure>
-                        <img
-                          src="images/neko.jpg"
-                          width="250"
-                          height="250"
-                          class="fit"
-                          alt=""
-                        />
-                        <figcaption>掲示板 ソースコード</figcaption>
-                      </figure>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div id="license">
-                <h2>保有資格</h2>
-                <p>
-                  英検準2級
-                  <br />
-                  Javaプログラミング能力認定試験 ３級
-                  <br />
-                  Webクリエイター能力認定試験／HTML5 スタンダード
-                  <br />
-                  PowerPoint®プレゼンテーション技能認定試験 上級<br />
-                  Excel®表計算処理技能認定試験 ２級
-                </p>
-              </div>
-              <div id="contact">
-                <h2>連絡先</h2>
-                <p>メールアドレス：221013@sapporo-mirai.ac.jp</p>
-              </div>
-            </section>
-          </main>
-        </div>
-        <div class="hr"></div>
-        <footer><p>©鳥島凜人 2023</p></footer>
-
-        <!--ハンバーガーメニューのボタン-->
-        <div
-          class="hamburger_btn"
-          v-click-outside="onClickOutside"
-          v-on:click="ActiveBtn=!ActiveBtn"
-        >
-          <span
-            class="line line_01"
-            v-bind:class="{'btn_line01':ActiveBtn}"
-          ></span>
-          <span
-            class="line line_02"
-            v-bind:class="{'btn_line02':ActiveBtn}"
-          ></span>
-          <span
-            class="line line_03"
-            v-bind:class="{'btn_line03':ActiveBtn}"
-          ></span>
-        </div>
-        <!--サイドバー-->
-        <transition name="menu">
-          <div class="menu" v-show="ActiveBtn">
-            <ul>
-              <li><a href="#intro">自己紹介</a></li>
-              <li><a href="#create">制作物</a></li>
-              <li><a href="#license">保有資格</a></li>
-              <li><a href="#contact">連絡先</a></li>
-            </ul>
-          </div>
-        </transition>
-      </v-app>
+    <header>
+      <h2 id="title">Rinto Torishima's portforio</h2>
+    </header>
+    <!-- spハンバーガーメニュー ↓ -->
+    <div class="sp_nav">
+      <div class="overlay" id="js_overlay"></div>
+      <div class="hamburger" id="js_hamburger">
+        <span class="hamburger_linetop"></span>
+        <span class="hamburger_linecenter"></span>
+        <span class="hamburger_linebottom"></span>
+      </div>
+      <div class="sidemenu">
+        <nav>
+          <ul>
+            <li>
+              <a class="text-decoration-none text-reset" href="">自己紹介</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-reset" href="">制作物</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-reset" href="">保有資格</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-reset" href="">連絡先</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <!-- spハンバーガーメニュー ↑ -->
+
+    <div class="wrapper">
+      <main>
+        <section class="profile">
+          <div id="intro">
+            <h2>自己紹介</h2>
+            <p>
+              札幌情報未来専門学校 <br />
+              インフォメーションテクノロジー学科 1年生 鳥島 凜人です。<br />
+              趣味はゲームと野球観戦で、好きなプログラミング言語はphpとjavascript。<br />
+              web系のエンジニアを目指してプログラミング勉強中。
+            </p>
+          </div>
+          <div id="create">
+            <h2>制作物</h2>
+            <p>
+              LaravelとjQueryを使って非同期いいね機能付きの掲示板を制作しました
+            </p>
+            <div id="box">
+              <div class="item">
+                <a
+                  href="https://v-bboard.com"
+                  target="_blank"
+                  class="hover text-decoration-none text-reset"
+                  ><figure>
+                    <img
+                      src="images/scShot.png"
+                      width="250"
+                      height="250"
+                      class="fit"
+                      alt=""
+                    />
+                    <figcaption>Laravel掲示板</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="item">
+                <a
+                  href="https://github.com/Rinto-Torishima/snsapp"
+                  target="_blank"
+                  class="hover text-decoration-none text-reset"
+                >
+                  <figure>
+                    <img
+                      src="images/neko.jpg"
+                      width="250"
+                      height="250"
+                      class="fit"
+                      alt=""
+                    />
+                    <figcaption>掲示板 ソースコード</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="license">
+            <h2>保有資格</h2>
+            <p>
+              英検準2級
+              <br />
+              Javaプログラミング能力認定試験 ３級
+              <br />
+              Webクリエイター能力認定試験／HTML5 スタンダード
+              <br />
+              PowerPoint®プレゼンテーション技能認定試験 上級<br />
+              Excel®表計算処理技能認定試験 ２級
+            </p>
+          </div>
+          <div id="contact">
+            <h2>連絡先</h2>
+            <p>メールアドレス：221013@sapporo-mirai.ac.jp</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="hr"></div>
+    <footer><p>©鳥島凜人 2023</p></footer>
+
     <script src="script.js"></script>
   </body>
 </html>
