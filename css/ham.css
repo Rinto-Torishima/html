@@ -81,3 +81,29 @@ li {
   width: 100vw;
   z-index: 1;
 }
+/* ヘッダー a hover:下線アンダーライン ↓ */
+
+ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+ul li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #3b5d82;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+ul li a:hover {
+  color: #3b5d82;
+}
+ul li a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

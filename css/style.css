@@ -7,7 +7,7 @@ header {
   height: 230px;
   display: grid;
   place-items: center;
-  background-image: url(images/header.jpg);
+  background-image: url(../images/header.jpg);
   background-repeat: repeat;
 }
 /* ヘッダーの文字の大きさ */
