@@ -36,75 +36,6 @@ header {
 h2 {
   font-size: 23px;
 }
-
-.wrapper {
-  max-width: 950px;
-  /* 中央寄せにする */
-  margin: 0 auto;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-main {
-  padding: 10px;
-  margin-top: 23px;
-  margin-bottom: 10px;
-}
-p {
-  font-size: 18px;
-  padding: 10px;
-}
-.profile {
-  text-align: center;
-}
-#intro {
-  margin-bottom: 80px;
-}
-#create {
-  margin-bottom: 80px;
-}
-.fit {
-  object-fit: cover;
-  border: solid 1px #ccc;
-}
-figcaption {
-  background-color: #ddd;
-  padding: 8px;
-  width: 250px;
-}
-/* 画像を2列に並べる */
-#box {
-  display: grid;
-  width: 500px;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 0 auto;
-}
-/* 画像と文字の間隔を埋める */
-#box img {
-  vertical-align: bottom;
-}
-#license {
-  margin-bottom: 80px;
-}
-
-.hr {
-  border-bottom: 1px solid #848484;
-}
-footer {
-  text-align: center;
-  color: #848484;
-  margin-bottom: 10px;
-  padding-top: 10px;
-}
-/* マウスカーソルを載せるとき */
-.hover:hover {
-  opacity: 0.5;
-  transition: 0.5s;
-}
-/* マウスカーソルを外すとき */
-.hover {
-  transition: 0.5s;
-}
 /*ハンバーガーメニュー*/
 
 .sp_nav {
@@ -187,6 +118,75 @@ li {
   visibility: hidden;
   width: 100vw;
   z-index: 1;
+}
+
+.wrapper {
+  max-width: 950px;
+  /* 中央寄せにする */
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+main {
+  padding: 10px;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+.profile {
+  text-align: center;
+}
+#intro {
+  margin-bottom: 80px;
+}
+#create {
+  margin-bottom: 80px;
+}
+.fit {
+  object-fit: cover;
+  border: solid 1px #ccc;
+}
+figcaption {
+  background-color: #ddd;
+  padding: 8px;
+  width: 250px;
+}
+/* 画像を2列に並べる */
+#box {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
+/* 画像と文字の間隔を埋める */
+#box img {
+  vertical-align: bottom;
+}
+#license {
+  margin-bottom: 80px;
+}
+
+.hr {
+  border-bottom: 1px solid #848484;
+}
+footer {
+  text-align: center;
+  color: #848484;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+/* マウスカーソルを載せるとき */
+.hover:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+/* マウスカーソルを外すとき */
+.hover {
+  transition: 0.5s;
 }
 
 @media (max-width: 600px) {
