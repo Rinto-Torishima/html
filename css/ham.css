@@ -81,8 +81,11 @@ li {
   width: 100vw;
   z-index: 1;
 }
+/* リセットcssで設定されていた余白を消す */
+ul {
+  padding-left: 0;
+}
 /* ヘッダー a hover:下線アンダーライン ↓ */
-
 ul li a {
   position: relative;
   display: inline-block;
