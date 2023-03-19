@@ -96,12 +96,12 @@ footer {
   padding-top: 10px;
 }
 /* マウスカーソルを載せるとき */
-.hoverI:hover {
+.item a:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
 /* マウスカーソルを外すとき */
-.hover {
+.item a {
   transition: 0.5s;
 }
 
