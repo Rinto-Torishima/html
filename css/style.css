@@ -98,12 +98,11 @@ footer {
 /* マウスカーソルを載せるとき */
 .item a:hover {
   opacity: 0.5;
-  transition: 0.5s;
 }
 /* マウスカーソルを外すとき */
-.item a {
+/* .item a {
   transition: 0.5s;
-}
+} */
 
 @media (max-width: 600px) {
   header {
