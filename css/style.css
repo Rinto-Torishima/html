@@ -96,7 +96,7 @@ footer {
   padding-top: 10px;
 }
 /* マウスカーソルを載せるとき */
-.hover:hover {
+.hoverI:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
